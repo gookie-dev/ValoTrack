@@ -1,11 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-        <title>ValoTrack</title>
+        <title>Valorant tracker</title>
     </head>
     <body>
-        <h1>ValoTrack</h1>
-        <p>This is just a test.</p>
+        <form method="POST">
+            <div class="field">
+                <label class="label">username</label>
+                <div >
+                    <label>
+                        <input class="input" type="text" name="username" placeholder="gookie">
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">tag</label>
+                <p>
+                    <label>
+                        <input class="input" type="text" name="tag" placeholder="4141">
+                    </label>
+                </p>
+            </div>
+            <div class="field">
+                <label class="label">region</label>
+                <p>
+                    <label>
+                        <input class="input" type="text" name="region" placeholder="eu">
+                    </label>
+                </p>
+            </div>
+             <div class="field">
+                <p class="control">
+                  <button type="submit" class="button is-success">
+                    Login
+                  </button>
+                </p>
+              </div>
+        </form>
     </body>
 </html>

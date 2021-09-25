@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <title>test2</title>
+    </head>
+    <body>
+        <h1>
+            Hello {{g.name}}, you are form {{g.region}}!
+        </h1>
+        <p>
+            Your puuid is: {{g.puuid}}<br>
+            Yor current tier is: {{g.current_tier_patched}}<br>
+            Yor rank in your tier is: {{g.ranking_in_tier}}
+        </p>
+    </body>
+</html>
