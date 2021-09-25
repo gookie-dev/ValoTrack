@@ -23,9 +23,9 @@ def index():
         region = request.form['region']
         r = requests.get('https://api.henrikdev.xyz/valorant/v1/account/' + username + '/' + tag).json()
         if r['status'] == '200':
-            session['id'] = region + r['data']['puuid']
             try:
                 if requests.get('https://api.henrikdev.xyz/valorant/v1/mmr/' + region + '/' + username + '/' + tag).json()['status'] == '200':
+                    session['id'] = region + r['data']['puuid']
                     return redirect(url_for('profile'))
             except:
                 pass
