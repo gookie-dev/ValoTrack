@@ -1,28 +1,181 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-        <title>test2</title>
+        <link rel="stylesheet" href="../static/css/profile.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b793aa7b97.js" crossorigin="anonymous"></script>
+        <title>{{g.name}}</title>
     </head>
-    <body>
-        <h1>
-            Hello {{g.name}}, you are from {{g.region}}!
-        </h1>
-        <p>
-            Your puuid is: {{g.puuid}}<br>
-            Your current tier is: {{g.current_tier_patched}}<br>
-            Your rank in your tier is: {{g.ranking_in_tier}}<br>
-            Your tag is: {{g.tag}}<br><br>
-            Match1:  Won-{{g.match1_has_won}}  |  Wins-{{g.match1_rounds_won}}  |  Losts-{{g.match1_rounds_lost}}  |  Map-{{g.match1_map}}  |  Mode-{{g.match1_mode}}  |  RoundsPlayed-{{g.match1_rounds_played}}  |  Agent-{{g.match1_agent_name}}  |  Score-{{g.match1_score}}  |  Kills-{{g.match1_kills}}  |  Deaths-{{g.match1_deaths}}  |  Assists-{{g.match1_assists}}<br>
-            Match2:  Won-{{g.match2_has_won}}  |  Wins-{{g.match2_rounds_won}}  |  Losts-{{g.match2_rounds_lost}}  |  Map-{{g.match2_map}}  |  Mode-{{g.match2_mode}}  |  RoundsPlayed-{{g.match2_rounds_played}}  |  Agent-{{g.match2_agent_name}}  |  Score-{{g.match2_score}}  |  Kills-{{g.match2_kills}}  |  Deaths-{{g.match2_deaths}}  |  Assists-{{g.match2_assists}}<br>
-            Match3:  Won-{{g.match3_has_won}}  |  Wins-{{g.match3_rounds_won}}  |  Losts-{{g.match3_rounds_lost}}  |  Map-{{g.match3_map}}  |  Mode-{{g.match3_mode}}  |  RoundsPlayed-{{g.match3_rounds_played}}  |  Agent-{{g.match3_agent_name}}  |  Score-{{g.match3_score}}  |  Kills-{{g.match3_kills}}  |  Deaths-{{g.match3_deaths}}  |  Assists-{{g.match3_assists}}<br>
-            Match4:  Won-{{g.match4_has_won}}  |  Wins-{{g.match4_rounds_won}}  |  Losts-{{g.match4_rounds_lost}}  |  Map-{{g.match4_map}}  |  Mode-{{g.match4_mode}}  |  RoundsPlayed-{{g.match4_rounds_played}}  |  Agent-{{g.match4_agent_name}}  |  Score-{{g.match4_score}}  |  Kills-{{g.match4_kills}}  |  Deaths-{{g.match4_deaths}}  |  Assists-{{g.match4_assists}}<br>
-            Match5:  Won-{{g.match5_has_won}}  |  Wins-{{g.match5_rounds_won}}  |  Losts-{{g.match5_rounds_lost}}  |  Map-{{g.match5_map}}  |  Mode-{{g.match5_mode}}  |  RoundsPlayed-{{g.match5_rounds_played}}  |  Agent-{{g.match5_agent_name}}  |  Score-{{g.match5_score}}  |  Kills-{{g.match5_kills}}  |  Deaths-{{g.match5_deaths}}  |  Assists-{{g.match5_assists}}<br>
-            Match6:  Won-{{g.match6_has_won}}  |  Wins-{{g.match6_rounds_won}}  |  Losts-{{g.match6_rounds_lost}}  |  Map-{{g.match6_map}}  |  Mode-{{g.match6_mode}}  |  RoundsPlayed-{{g.match6_rounds_played}}  |  Agent-{{g.match6_agent_name}}  |  Score-{{g.match6_score}}  |  Kills-{{g.match6_kills}}  |  Deaths-{{g.match6_deaths}}  |  Assists-{{g.match6_assists}}<br>
-            Match7:  Won-{{g.match7_has_won}}  |  Wins-{{g.match7_rounds_won}}  |  Losts-{{g.match7_rounds_lost}}  |  Map-{{g.match7_map}}  |  Mode-{{g.match7_mode}}  |  RoundsPlayed-{{g.match7_rounds_played}}  |  Agent-{{g.match7_agent_name}}  |  Score-{{g.match7_score}}  |  Kills-{{g.match7_kills}}  |  Deaths-{{g.match7_deaths}}  |  Assists-{{g.match7_assists}}<br>
-            Match8:  Won-{{g.match8_has_won}}  |  Wins-{{g.match8_rounds_won}}  |  Losts-{{g.match8_rounds_lost}}  |  Map-{{g.match8_map}}  |  Mode-{{g.match8_mode}}  |  RoundsPlayed-{{g.match8_rounds_played}}  |  Agent-{{g.match8_agent_name}}  |  Score-{{g.match8_score}}  |  Kills-{{g.match8_kills}}  |  Deaths-{{g.match8_deaths}}  |  Assists-{{g.match8_assists}}<br>
-            Match9:  Won-{{g.match9_has_won}}  |  Wins-{{g.match9_rounds_won}}  |  Losts-{{g.match9_rounds_lost}}  |  Map-{{g.match9_map}}  |  Mode-{{g.match9_mode}}  |  RoundsPlayed-{{g.match9_rounds_played}}  |  Agent-{{g.match9_agent_name}}  |  Score-{{g.match9_score}}  |  Kills-{{g.match9_kills}}  |  Deaths-{{g.match9_deaths}}  |  Assists-{{g.match9_assists}}<br>
-            Match10:  Won-{{g.match10_has_won}}  |  Wins-{{g.match10_rounds_won}}  |  Losts-{{g.match10_rounds_lost}}  |  Map-{{g.match10_map}}  |  Mode-{{g.match10_mode}}  |  RoundsPlayed-{{g.match10_rounds_played}}  |  Agent-{{g.match10_agent_name}}  |  Score-{{g.match10_score}}  |  Kills-{{g.match10_kills}}  |  Deaths-{{g.match10_deaths}}  |  Assists-{{g.match10_assists}}<br>
-        </p>
+    <body class="bg-dark text-light">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mt-5" id="profilecard1">
+                    <div class="col-1">
+                        <img id="playercard" src="{{g.playercard}}">
+                    </div>
+                    <div class="col-10">
+                        <div class="row">
+                            <span>{{g.name}} <span class="badge bg-primary">{{g.tag}}</span></span>
+                        </div>
+                        <div class="row">
+                            <span>{{g.kd}} | <span>{{g.kda}}</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-5 ml-5" id="profilecard2">
+                    <img id="rankimg" src="../static/img/Iron-1.png"> <span>{{g.current_tier_patched}} <span class="badge bg-primary">{{g.ranking_in_tier}}</span></span>
+                </div>
+            </div>
+            <div class="row mt-2" id="matchhistory">
+                <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match1_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match1_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match2_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match2_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match3_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match3_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match4_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match4_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match5_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match5_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match6_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match6_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match7_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match7_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match8_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match8_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match9_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match9_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+                            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12 p-2 mb-0-1 match">
+                    <div class="col-1">
+                        <img id="agenticon" src="{{g.match10_agent_icon}}">
+                        <span class="badge bg-primary" id="agentname">{{g.match10_agent_name}}</span>
+                    </div>
+                    <div class="col-11">
+                        <div class="row">
+            
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            
+        </script>
     </body>
 </html>
