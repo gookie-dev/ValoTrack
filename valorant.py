@@ -20,3 +20,15 @@ def get_match_data(match_id):
 
 def get_mmr_data_by_puuid(version, region, puuid):
     return requests.get('https://api.henrikdev.xyz/valorant/' + version + '/by-puuid/mmr/' + region + '/' + puuid).json()
+
+
+def get_total(region, puuid):
+    return requests.post('https://api.henrikdev.xyz/valorant/v1/raw', headers={'Content-Type': 'application/json'}, data=json.dumps({"type": "matchhistory", "value": puuid, "region": region})).json()["Total"]
+
+
+def get_matchhistory(region, puuid,total, match):
+    if match <= total:
+        matchid = requests.post('https://api.henrikdev.xyz/valorant/v1/raw', headers={'Content-Type': 'application/json'}, data=json.dumps({"type": "matchhistory", "value": puuid, "region": region, "queries": "?&startIndex=" + str(match - 1) + "&endIndex=" + str(match)})).json()["History"][0]["MatchID"]
+        return get_match_data(matchid)
+    else:
+        return False
