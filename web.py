@@ -66,6 +66,10 @@ def profile():
                 exec(f'g.match{i + 1}_kills = p["stats"]["kills"]')
                 exec(f'g.match{i + 1}_deaths = p["stats"]["deaths"]')
                 exec(f'g.match{i + 1}_assists = p["stats"]["assists"]')
+                team = p["team"].lower()
+        exec(f'g.match{i + 1}_has_won = i_match["data"]["teams"][team]["has_won"]')
+        exec(f'g.match{i + 1}_rounds_won = i_match["data"]["teams"][team]["rounds_won"]')
+        exec(f'g.match{i + 1}_rounds_lost = i_match["data"]["teams"][team]["rounds_lost"]')
     return render_template('profile.html')
 
 
