@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Plateia';
+    src: url('../fonts/Plateia Bold.ttf') format('truetype');
+  }
+
+  body {
+    color: white !important;
+    background-image: url(https://wallpapercave.com/wp/wp9074154.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.mb-0-1{
+    margin-bottom: .05rem!important;
+}
+  
+.container-fluid {
+    backdrop-filter: blur(5px);
+    height: 100%;
+    position: absolute;
+}
+
+#playercard{
+    width: 80px; /* width of container */
+    height: 80px; /* height of container */
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25%;
+}
+
+#profilecard1{
+    font-family: 'Plateia' !important;
+    background-color: #002c587a;
+    padding: 2%;
+    border-radius: 1%;
+    backdrop-filter: blur(10px);
+    border: 1px solid #0000003b;
+    border-right: 0px;
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-content: center !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background-repeat: no-repeat;
+}
+#profilecard2{
+    font-family: 'Plateia' !important;
+    background-color: #002c587a;
+    padding: 2%;
+    border-radius: 1%;
+    backdrop-filter: blur(10px);
+    border: 1px solid #0000003b;
+    border-left: 0px;
+}
+
+
+#rankimg {
+    max-height: 50px !important;
+}
+
+#agenticon {
+    max-height: 55px !important;
+}
+#agentname {
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+
+}
+
+
+
+.match {
+    border-bottom: 1px solid black;
+    background-color: #002c587a;
+    backdrop-filter: blur(10px);
+    border: 1px solid #0000003b;
+    display: inline-flex !important;
+}
