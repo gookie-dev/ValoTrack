@@ -6,7 +6,6 @@ from flask import Flask, g, render_template, request, session, url_for, redirect
 
 app = Flask(__name__)
 app.secret_key = '2965096f5a5b435d77794c2ec258289a63cb8274a2eb714af2336f5bfd443b4f'
-#print(valorant.get_matchhistory("eu", "81e06dc2-23c7-507e-a684-84475dfed03f", 2))
 
 
 @app.before_request
@@ -67,9 +66,14 @@ def profile():
                 exec(f'g.match{i + 1}_deaths = p["stats"]["deaths"]')
                 exec(f'g.match{i + 1}_assists = p["stats"]["assists"]')
                 team = p["team"].lower()
-        exec(f'g.match{i + 1}_has_won = i_match["data"]["teams"][team]["has_won"]')
-        exec(f'g.match{i + 1}_rounds_won = i_match["data"]["teams"][team]["rounds_won"]')
-        exec(f'g.match{i + 1}_rounds_lost = i_match["data"]["teams"][team]["rounds_lost"]')
+                if team == "blue" or team == "red":
+                    exec(f'g.match{i + 1}_has_won = i_match["data"]["teams"][team]["has_won"]')
+                    exec(f'g.match{i + 1}_rounds_won = i_match["data"]["teams"][team]["rounds_won"]')
+                    exec(f'g.match{i + 1}_rounds_lost = i_match["data"]["teams"][team]["rounds_lost"]')
+                else:
+                    exec(f'g.match{i + 1}_has_won = "/"')
+                    exec(f'g.match{i + 1}_rounds_won = "/"')
+                    exec(f'g.match{i + 1}_rounds_lost = "/"')
     return render_template('profile.html')
 
 
