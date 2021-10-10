@@ -1,7 +1,55 @@
+@font-face {
+  font-family: 'Plateia';
+  src: url('../fonts/Plateia\ Bold.ttf') format('truetype');
+}
+
+#formbody {
+  margin-top: 10% !important;
+  background: #0443e433;
+  backdrop-filter: blur(5px);
+  border-radius: 2%;
+
+}
+
 body {
-  padding: 60px;
-  text-align: center;
-  background: #380b94;
-  color: white;
-  font-size: 30px;
+  color: white !important;
+  background-image: url(https://wallpapercave.com/wp/wp9074154.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#maintitle {
+
+  font-family: 'Plateia' !important;
+}
+
+.wrapper { position: relative; }
+
+i.fas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    background-color: #2e3b5c;
+    padding: 10px;
+    border: 1px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.form-control {
+  border: 1px solid black !important;
+  padding-left: 13% !important;
+}
+
+.form-select {
+  border: 1px solid black !important;
+  padding-left: 13% !important;
+}
+
+.footer {
+  position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
