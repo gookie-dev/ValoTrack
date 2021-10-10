@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b793aa7b97.js" crossorigin="anonymous"></script>
         <title>Valorant tracker</title>
     </head>
     <body>
-        <form method="POST">
-            <div class="field">
-                <label class="label">username</label>
-                <div >
-                    <label>
-                        <input class="input" type="text" name="username" placeholder="gookie">
-                    </label>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4"  id="formbody">
+                    <div class="col-12 mb-3">
+                        <h3 class="mt-3 mb-4 text-center" id="maintitle">ValoTrack</h3>
+                        <form method="POST" class="pb-5 px-5" id="mainform">
+                            <div class="form-floating mb-3">
+                                <div class="wrapper">
+                                    <input type="username" class="form-control" name="username" id="username" aria-describedby="username" placeholder="valorantdev">
+                                    <i class="fas fa-user"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <div class="wrapper">
+                                    <input type="tag" class="form-control" name="tag" id="tag" aria-describedby="tag" placeholder="1337">
+                                    <i class="fas fa-hashtag"></i>
+                                </div>
+                            </div>
+                            <div class="wrapper">
+                                <select class="form-select" id="region" name="region" aria-describedby="region" aria-label="region">
+                                    <option selected>choose your region</option>
+                                    <option value="eu">Europe</option>
+                                    <option value="na">North-America</option>
+                                    <option value="ap">Asia</option>
+                                    <option value="kr">Korea</option>
+                                </select>
+                                <i class="fas fa-globe"></i>
+                            </div>
+                             <div class="mt-5">
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </div>
+                             </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="field">
-                <label class="label">tag</label>
-                <p>
-                    <label>
-                        <input class="input" type="text" name="tag" placeholder="4141">
-                    </label>
-                </p>
+        </div>
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container">
+              <span class="text-muted">Place sticky footer content here.</span>
             </div>
-            <div class="field">
-                <label class="label">region</label>
-                <p>
-                    <label>
-                        <input class="input" type="text" name="region" placeholder="eu">
-                    </label>
-                </p>
-            </div>
-             <div class="field">
-                <p class="control">
-                  <button type="submit" class="button is-success">
-                    Login
-                  </button>
-                </p>
-              </div>
-        </form>
+          </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
