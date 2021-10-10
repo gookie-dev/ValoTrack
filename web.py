@@ -39,6 +39,7 @@ def profile():
     g.region = g.id[:2]
     g.puuid = g.id[2:]
     g.name = valorant.get_mmr_data_by_puuid('v1', g.region, g.puuid)['data']['name']
+    g.tag = valorant.get_mmr_data_by_puuid('v1', g.region, g.puuid)['data']['tag']
     g.current_tier = valorant.get_mmr_data_by_puuid('v1', g.region, g.puuid)['data']['currenttier']
     g.current_tier_patched = valorant.get_mmr_data_by_puuid('v1', g.region, g.puuid)['data']['currenttierpatched']
     g.ranking_in_tier = valorant.get_mmr_data_by_puuid('v1', g.region, g.puuid)['data']['ranking_in_tier']
