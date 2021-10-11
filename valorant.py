@@ -32,3 +32,9 @@ def get_matchhistory(region, puuid,total, match):
         return get_match_data(matchid)
     else:
         return False
+
+
+def get_rank_icon(currenttier):
+    length = len(requests.get('https://valorant-api.com/v1/competitivetiers').json()["data"]) - 1
+    uuid = requests.get('https://valorant-api.com/v1/competitivetiers').json()["data"][length]["uuid"]
+    return "https://media.valorant-api.com/competitivetiers/" + uuid + "/" + str(currenttier) + "/largeicon.png"
