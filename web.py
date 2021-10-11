@@ -49,7 +49,7 @@ def profile():
     g.current_tier = mmr_data_by_puuid['data']['currenttier']
     g.current_tier_patched = mmr_data_by_puuid['data']['currenttierpatched']
     g.ranking_in_tier = mmr_data_by_puuid['data']['ranking_in_tier']
-    g.playercard = valorant.get_account_data(g.name, g.tag)["data"]["card"]["wide"]
+    g.playercard = "https://media.valorant-api.com/playercards/" + valorant.get_account_data(g.name, g.tag)["data"]["card"]["id"] + "/displayicon.png"
     g.total = valorant.get_total(g.region, g.puuid)
     for i in range(10):
         i_match = valorant.get_matchhistory(g.region, g.puuid, g.total, (i + 1))
