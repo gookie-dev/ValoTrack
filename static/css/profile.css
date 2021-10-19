@@ -9,54 +9,119 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Plateia';
   }
 
-.mb-0-1{
-    margin-bottom: .05rem!important;
-}
-  
-.container-fluid {
-    backdrop-filter: blur(5px);
-    height: 100%;
-    position: absolute;
+.navspan {
+    font-size: 0.8rem;
+    font-family: 'Plateia' !important;
+  }
+
+.navspan2 {
+    font-size: 0.71rem;
+    font-family: 'Plateia' !important;
 }
 
+.topspan {
+    font-size: 1.1rem !important;
+    font-family: 'Plateia' !important;
+    color: white !important;
+}
+
+.botspan {
+    font-size: 0.71rem;
+    font-family: 'Plateia' !important;
+    color: #dcdcdc !important;
+}
+
+.won {
+    color: lightgreen !important;
+}
+.lost{
+    color: #fb4040 !important;
+}
+
+.kills{
+    color: white !important;
+}
+
+.deaths {
+    color: white !important;
+}
+
+.assists {
+    color: white !important;
+}
+
+.mb-0-1{
+    margin-bottom: .8rem !important;
+}
+
+
 #playercard{
-    width: 80px; /* width of container */
-    height: 80px; /* height of container */
-    object-fit: cover;
-    object-position: top;
-    border-radius: 25%;
+    width: 70px;
+    height: 70px;
+    border-radius: 0%;
+
 }
 
 #profilecard1{
     font-family: 'Plateia' !important;
     background-color: #002c587a;
-    padding: 2%;
-    border-radius: 1%;
+    padding-left: 1%;
     backdrop-filter: blur(10px);
     border: 1px solid #0000003b;
     border-right: 0px;
     display: inline-flex !important;
     flex-direction: row !important;
     align-content: center !important;
-    justify-content: space-between !important;
     align-items: center !important;
     background-repeat: no-repeat;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
 }
 #profilecard2{
     font-family: 'Plateia' !important;
     background-color: #002c587a;
-    padding: 2%;
+    padding-right: 1%;
     border-radius: 1%;
     backdrop-filter: blur(10px);
     border: 1px solid #0000003b;
     border-left: 0px;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-content: center !important;
+    align-items: center !important;
 }
 
+#profilestuff {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.mainbar {
+    border-bottom: 2px solid #ff4755;
+}
+
+#searchname {
+    width: 30%;
+}
+#tag{
+    width: 18% !important;
+}
+
+#region {
+    width: 45% !important;
+    margin-right: 10px;
+}
 
 #rankimg {
-    max-height: 50px !important;
+    width: 65px;
+    height: 65px;
 }
 
 #agenticon {
