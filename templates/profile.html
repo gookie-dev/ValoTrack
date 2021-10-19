@@ -10,7 +10,7 @@
 
         <nav class="navbar mainbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./">
                     <img class="me-2" src="https://valoranttracker.org/images/icons/icon-384x384.png" height="37px">
                     ValoTracker
                 </a>
@@ -42,24 +42,49 @@
             <div class="row mt-2" id="matchhistory">
                 <div class="col-12 col-sm-3">
                     <div class="col-12" id="profilecard1">
-                        <div class="col-3 me-1">
+                        <div class="playerbg" style="background-image: url({{g.playercard_banner}});"></div>
+                        <div class="backdrop"></div>
+                        <div class="row mt-5">
+                            <div class="col-12 d-flex justify-content-center">
                                 <img id="playercard" src="{{g.playercard_icon}}">
-                        </div>
-                        <div class="col-7">
-                            <div class="row">
-                                <span class="navspan">{{g.name}} <span class="badge bg-primary navspan">{{g.tag}}</span></span>
-                            </div>
-                            <div class="row">
-                                <span class="navspan2">{{g.current_tier_patched}} <span class="badge bg-primary navspan">{{g.ranking_in_tier}} RR / 100 RR</span></span>
                             </div>
                         </div>
-                        <div class="col-1">
-                            <img id="rankimg" src="{{g.current_tier_icon}}">
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-center">
+                                <span>{{g.name}} #{{g.tag}}</span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12 d-flex justify-content-center">
+                                <span class="playertitle">{{g.player_title}}</span>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 d-flex justify-content-center">
+                                <img id="rankimg" src="{{g.current_tier_icon}}">
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12 d-flex justify-content-center">
+                                <span>{{g.current_tier_patched}}</span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="progress" style="width: 50%;height: .4rem;">
+                                    <div class="progress-bar progress-bar-striped" id="rankprogress" role="progressbar" aria-valuenow="{{g.ranking_in_tier}}" aria-valuemin="0" aria-valuemax="100" ></div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12 d-flex justify-content-center">
+                                <span class="navspan2">{{g.ranking_in_tier}} / 100 RR</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-9">
-                    <div class="col-12 p-2 mb-0-1 match">
+                <div class="col-12 col-sm-9 bg-dark">
+                    <div class="col-12 p-2 mb-3 match">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match1_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match1_agent_name}}</span>
@@ -104,7 +129,7 @@
                                 <span class="topspan"><span class="kills" id="firstkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 text-end me-2">
                             <div class="row">
                                 <span class="botspan"><span class="kills">Score</span>
                             </div>
@@ -112,8 +137,13 @@
                                 <span class="topspan">{{g.match1_score}}</span>
                             </div>
                         </div>
+                        <div class="col-1 d-flex justify-content-center">
+                            <div class="row">
+                                <button class="btn btn-outline-primary" id="match1btn" type="submit"><i class="fas fa-info"></i></button>
+                            </div>
+                        </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match2_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match2_agent_name}}</span>
@@ -167,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match3_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match3_agent_name}}</span>
@@ -221,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match4_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match4_agent_name}}</span>
@@ -275,7 +305,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match5_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match5_agent_name}}</span>
@@ -329,7 +359,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match6_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match6_agent_name}}</span>
@@ -383,7 +413,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match7_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match7_agent_name}}</span>
@@ -437,7 +467,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match8_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match8_agent_name}}</span>
@@ -491,7 +521,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 mb-3 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match9_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match9_agent_name}}</span>
@@ -545,7 +575,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-0-1 match">
+                     <div class="col-12 p-2 match">
                         <div class="col-1">
                             <img id="agenticon" src="{{g.match10_agent_icon}}">
                             <span class="badge bg-primary" id="agentname">{{g.match10_agent_name}}</span>
@@ -609,6 +639,7 @@
         <script>
             window.addEventListener('load', (event) => {
                 mathall();
+                $("#rankprogress").css("width","{{g.ranking_in_tier}}");
             });
         </script>
         <script>

@@ -5,16 +5,18 @@
 
   body {
     color: white !important;
-    background-image: url(https://wallpapercave.com/wp/wp9074154.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+   
     font-family: 'Plateia';
   }
 
 .navspan {
     font-size: 0.8rem;
     font-family: 'Plateia' !important;
+  }
+
+  #match1btn {
+    width: 3.3rem;
+    height: 3.3rem;
   }
 
 .navspan2 {
@@ -67,19 +69,55 @@
 
 #profilecard1{
     font-family: 'Plateia' !important;
-    background-color: #002c587a;
+    background-color: #000000;
     padding-left: 1%;
     backdrop-filter: blur(10px);
     border: 1px solid #0000003b;
     border-right: 0px;
-    display: inline-flex !important;
     flex-direction: row !important;
     align-content: center !important;
     align-items: center !important;
     background-repeat: no-repeat;
     padding-top: 0.4%;
     padding-bottom: 0.4%;
+    height: 100%;
 }
+
+.playerbg {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: center center;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.playertitle {
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.backdrop {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00000045;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
 #profilecard2{
     font-family: 'Plateia' !important;
     background-color: #002c587a;
@@ -138,7 +176,7 @@
 
 .match {
     border-bottom: 1px solid black;
-    background-color: #002c587a;
+    background-color: #00000018;
     backdrop-filter: blur(10px);
     border: 1px solid #0000003b;
     display: inline-flex !important;
