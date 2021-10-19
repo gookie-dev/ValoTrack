@@ -15,3 +15,5 @@ A simple Valorant match tracker made by gookieAT & Vesturo
 - [ ] Search over profile.html navbar
 - [x] General Stats
 - [x] Last 10 Matches
+- [ ] Async api request
+- [ ] store data for further requests
