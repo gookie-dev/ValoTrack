@@ -43,7 +43,8 @@
                 <div class="col-12 col-sm-3">
                     <div class="col-12" id="profilecard1">
                         <div class="playerbg" style="background-image: url({{g.playercard_banner}});"></div>
-                        <div class="row  mt-5">
+                        <div class="backdrop"></div>
+                        <div class="row mt-5">
                             <div class="col-12 d-flex justify-content-center">
                                 <img id="playercard" src="{{g.playercard_icon}}">
                             </div>
@@ -51,6 +52,11 @@
                         <div class="row mt-3">
                             <div class="col-12 d-flex justify-content-center">
                                 <span>{{g.name}} #{{g.tag}}</span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12 d-flex justify-content-center">
+                                <span class="playertitle">{{g.player_title}}</span>
                             </div>
                         </div>
                         <div class="row mt-5">
@@ -123,12 +129,17 @@
                                 <span class="topspan"><span class="kills" id="firstkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 text-end me-2">
                             <div class="row">
                                 <span class="botspan"><span class="kills">Score</span>
                             </div>
                             <div class="row">
                                 <span class="topspan">{{g.match1_score}}</span>
+                            </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                            <div class="row">
+                                <button class="btn btn-outline-primary" id="match1btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
