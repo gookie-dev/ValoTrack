@@ -6,33 +6,46 @@
   body {
     color: white !important;
    
-    font-family: 'Plateia';
+    font-family: 'Roboto', sans-serif;
   }
 
+.rankbox {
+    backdrop-filter: blur(5px);
+    background-color: #00000075;
+    border: 1px solid #ff4655;
+}
+
+.mb-2-5 {
+    margin-bottom: .95rem !important;
+}
 .navspan {
     font-size: 0.8rem;
-    font-family: 'Plateia' !important;
+    font-family: 'Roboto', sans-serif;
   }
 
-  #match1btn {
-    width: 3.3rem;
-    height: 3.3rem;
+  .matchbtn {
+    width: 3.3rem !important;
+    height: 3.3rem !important;
   }
+
+.navbar-brand {
+    font-family: 'Plateia' !important;
+}
 
 .navspan2 {
     font-size: 0.71rem;
-    font-family: 'Plateia' !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 .topspan {
     font-size: 1.1rem !important;
-    font-family: 'Plateia' !important;
+    font-family: 'Roboto', sans-serif;
     color: white !important;
 }
 
 .botspan {
     font-size: 0.71rem;
-    font-family: 'Plateia' !important;
+    font-family: 'Roboto', sans-serif;
     color: #dcdcdc !important;
 }
 
@@ -68,7 +81,7 @@
 }
 
 #profilecard1{
-    font-family: 'Plateia' !important;
+    font-family: 'Roboto', sans-serif;
     background-color: #000000;
     padding-left: 1%;
     backdrop-filter: blur(10px);
@@ -119,7 +132,7 @@
 }
 
 #profilecard2{
-    font-family: 'Plateia' !important;
+    font-family: 'Roboto', sans-serif;
     background-color: #002c587a;
     padding-right: 1%;
     border-radius: 1%;
