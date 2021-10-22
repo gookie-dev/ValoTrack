@@ -38,3 +38,10 @@ def get_rank_icon(currenttier):
     length = len(requests.get('https://valorant-api.com/v1/competitivetiers').json()["data"]) - 1
     uuid = requests.get('https://valorant-api.com/v1/competitivetiers').json()["data"][length]["uuid"]
     return "https://media.valorant-api.com/competitivetiers/" + uuid + "/" + str(currenttier) + "/largeicon.png"
+
+
+def get_map_data(name):
+    maps = requests.get('https://valorant-api.com/v1/maps').json()
+    for map in maps["data"]:
+        if map["displayName"] == name:
+            return map

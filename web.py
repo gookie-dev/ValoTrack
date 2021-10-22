@@ -56,6 +56,7 @@ def profile():
     for i in range(10):
         i_match = valorant.get_matchhistory(g.region, g.puuid, g.total, (i + 1))
         exec(f'g.match{i + 1}_map = i_match["data"]["metadata"]["map"]')
+        exec(f'g.match{i + 1}_map_icon = valorant.get_map_data(g.match{i + 1}_map)["listViewIcon"]')
         exec(f'g.match{i + 1}_mode = i_match["data"]["metadata"]["mode"]')
         exec(f'g.match{i + 1}_rounds_played = i_match["data"]["metadata"]["rounds_played"]')
         players = i_match["data"]["players"]["all_players"]
