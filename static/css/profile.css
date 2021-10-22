@@ -18,7 +18,7 @@
 
 
 .mb-2-5 {
-    margin-bottom: .95rem !important;
+    margin-bottom: .45rem !important;
 }
 .navspan {
     font-size: 0.8rem;
@@ -86,7 +86,6 @@
     font-family: 'Roboto', sans-serif;
     background-color: #000000;
     padding-left: 1%;
-    backdrop-filter: blur(10px);
     border: 1px solid #0000003b;
     border-right: 0px;
     flex-direction: row !important;
@@ -96,6 +95,7 @@
     padding-top: 0.4%;
     padding-bottom: 0.4%;
     height: 100%;
+    backdrop-filter: blur(3px);
 }
 
 .playerbg {
@@ -178,7 +178,8 @@
 }
 
 #agenticon {
-    max-height: 55px !important;
+    max-height: 100% !important;
+    min-height: 100% !important;
 }
 #agentname {
     position: absolute;
@@ -192,6 +193,5 @@
 .match {
     border-bottom: 1px solid black;
     background-color: #00000018;
-    backdrop-filter: blur(10px);
     display: inline-flex !important;
 }
