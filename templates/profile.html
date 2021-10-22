@@ -91,12 +91,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-9 bg-dark">
-                    <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match1_mapcard}});">
+                    <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match1_mapcard}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match1_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match1_agent_name}}</span>
                         </div>
-                        <div class="col-12 col-sm-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match1_mode}}</span>
                             </div>
@@ -104,15 +103,18 @@
                                 <span class="topspan">Map: {{g.match1_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-12 col-sm-2 text-center">
+                        <div class="col-12 p-2 col-sm-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match1_rounds_won}}</span> : <span class="lost">{{g.match1_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match1_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch1"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan"><span class="kills">K</span> / <span class="deaths">D</span> / <span class="assists">A</span></span>
                             </div>
@@ -120,7 +122,7 @@
                                 <span class="topspan"><span class="kills">{{g.match1_kills}}</span> / <span class="deaths">{{g.match1_deaths}}</span> / <span class="assists">{{g.match1_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan"><span class="kills">K/D</span>
                             </div>
@@ -128,7 +130,7 @@
                                 <span class="topspan"><span class="kills" id="firstkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan"><span class="kills">K/D/A</span>
                             </div>
@@ -136,7 +138,7 @@
                                 <span class="topspan"><span class="kills" id="firstkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan"><span class="kills">Score</span>
                             </div>
@@ -144,18 +146,17 @@
                                 <span class="topspan">{{g.match1_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match1btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match2_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match2_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match2_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match2_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match2_mode}}</span>
                             </div>
@@ -163,15 +164,18 @@
                                 <span class="topspan">Map: {{g.match2_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match2_rounds_won}}</span> : <span class="lost">{{g.match2_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match2_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch2"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -179,7 +183,7 @@
                                 <span class="topspan"><span class="kills">{{g.match2_kills}}</span> / <span class="deaths">{{g.match2_deaths}}</span> / <span class="assists">{{g.match2_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -187,7 +191,7 @@
                                 <span class="topspan"><span class="kills" id="secondkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -195,7 +199,7 @@
                                 <span class="topspan"><span class="kills" id="secondkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -203,18 +207,17 @@
                                 <span class="topspan">{{g.match2_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match2btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match3_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match3_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match3_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match3_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match3_mode}}</span>
                             </div>
@@ -222,15 +225,18 @@
                                 <span class="topspan">Map: {{g.match3_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match3_rounds_won}}</span> : <span class="lost">{{g.match3_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match3_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch3"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -238,7 +244,7 @@
                                 <span class="topspan"><span class="kills">{{g.match3_kills}}</span> / <span class="deaths">{{g.match3_deaths}}</span> / <span class="assists">{{g.match3_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -246,7 +252,7 @@
                                 <span class="topspan"><span class="kills" id="thirdkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -254,7 +260,7 @@
                                 <span class="topspan"><span class="kills" id="thirdkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -262,18 +268,18 @@
                                 <span class="topspan">{{g.match3_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match3btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match4_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match4_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match4_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match4_agent_name}}</span>
+                            <span class="badge" id="agentname">{{g.match4_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match4_mode}}</span>
                             </div>
@@ -281,15 +287,18 @@
                                 <span class="topspan">Map: {{g.match4_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match4_rounds_won}}</span> : <span class="lost">{{g.match4_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match4_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch4"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -297,7 +306,7 @@
                                 <span class="topspan"><span class="kills">{{g.match4_kills}}</span> / <span class="deaths">{{g.match4_deaths}}</span> / <span class="assists">{{g.match4_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -305,7 +314,7 @@
                                 <span class="topspan"><span class="kills" id="fourthkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -313,7 +322,7 @@
                                 <span class="topspan"><span class="kills" id="fourthkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -321,18 +330,17 @@
                                 <span class="topspan">{{g.match4_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match4btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match5_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match5_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match5_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match5_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match5_mode}}</span>
                             </div>
@@ -340,15 +348,18 @@
                                 <span class="topspan">Map: {{g.match5_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match5_rounds_won}}</span> : <span class="lost">{{g.match5_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match5_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch5"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -356,7 +367,7 @@
                                 <span class="topspan"><span class="kills">{{g.match5_kills}}</span> / <span class="deaths">{{g.match5_deaths}}</span> / <span class="assists">{{g.match5_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -364,7 +375,7 @@
                                 <span class="topspan"><span class="kills" id="fifthkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -372,7 +383,7 @@
                                 <span class="topspan"><span class="kills" id="fifthkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -380,18 +391,17 @@
                                 <span class="topspan">{{g.match5_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match5btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match6_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match6_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match6_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match6_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match6_mode}}</span>
                             </div>
@@ -399,15 +409,18 @@
                                 <span class="topspan">Map: {{g.match6_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match6_rounds_won}}</span> : <span class="lost">{{g.match6_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match6_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch6"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -415,7 +428,7 @@
                                 <span class="topspan"><span class="kills">{{g.match6_kills}}</span> / <span class="deaths">{{g.match6_deaths}}</span> / <span class="assists">{{g.match6_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -423,7 +436,7 @@
                                 <span class="topspan"><span class="kills" id="sixthkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -431,7 +444,7 @@
                                 <span class="topspan"><span class="kills" id="sixthkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -439,18 +452,17 @@
                                 <span class="topspan">{{g.match6_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match6btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match7_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match7_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match7_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match7_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match7_mode}}</span>
                             </div>
@@ -458,15 +470,18 @@
                                 <span class="topspan">Map: {{g.match7_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match7_rounds_won}}</span> : <span class="lost">{{g.match7_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match7_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch7"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -474,7 +489,7 @@
                                 <span class="topspan"><span class="kills">{{g.match7_kills}}</span> / <span class="deaths">{{g.match7_deaths}}</span> / <span class="assists">{{g.match7_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -482,7 +497,7 @@
                                 <span class="topspan"><span class="kills" id="seventhkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -490,7 +505,7 @@
                                 <span class="topspan"><span class="kills" id="seventhkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -498,18 +513,17 @@
                                 <span class="topspan">{{g.match7_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match7btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match8_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match8_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match8_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match8_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match8_mode}}</span>
                             </div>
@@ -517,15 +531,18 @@
                                 <span class="topspan">Map: {{g.match8_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match8_rounds_won}}</span> : <span class="lost">{{g.match8_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match8_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch8"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -533,7 +550,7 @@
                                 <span class="topspan"><span class="kills">{{g.match8_kills}}</span> / <span class="deaths">{{g.match8_deaths}}</span> / <span class="assists">{{g.match8_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -541,7 +558,7 @@
                                 <span class="topspan"><span class="kills" id="eigthkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -549,7 +566,7 @@
                                 <span class="topspan"><span class="kills" id="eighthkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -557,18 +574,17 @@
                                 <span class="topspan">{{g.match8_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match8btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match9_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match9_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match9_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match9_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match9_mode}}</span>
                             </div>
@@ -576,15 +592,18 @@
                                 <span class="topspan">Map: {{g.match9_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match9_rounds_won}}</span> : <span class="lost">{{g.match9_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match9_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch9"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -592,7 +611,7 @@
                                 <span class="topspan"><span class="kills">{{g.match9_kills}}</span> / <span class="deaths">{{g.match9_deaths}}</span> / <span class="assists">{{g.match9_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -600,7 +619,7 @@
                                 <span class="topspan"><span class="kills" id="ninethkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -608,7 +627,7 @@
                                 <span class="topspan"><span class="kills" id="ninethkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -616,18 +635,17 @@
                                 <span class="topspan">{{g.match9_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match9btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match10_mapcard}});">
-                        <div class="col-1">
+                     <div class="col-12 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match10_mapcard}});">
+                        <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match10_agent_icon}}">
-                            <span class="badge bg-danger" id="agentname">{{g.match10_agent_name}}</span>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
                                 <span class="botspan">{{g.match10_mode}}</span>
                             </div>
@@ -635,15 +653,18 @@
                                 <span class="topspan">Map: {{g.match10_map}}</span> 
                             </div>
                         </div>
-                        <div class="col-2 text-center">
+                        <div class="col-2 p-2 text-center">
                             <div class="row">
                                 <span class="topspan"><span class="won">{{g.match10_rounds_won}}</span> : <span class="lost">{{g.match10_rounds_lost}}</span></span>
                             </div>
                             <div class="row">
                                 <span class="botspan">{{g.match10_rounds_played}} Rounds played</span>
                             </div>
+                            <div class="row"> 
+                                <span class="badge" id="statusmatch10"></span>
+                            </div>
                         </div>
-                        <div class="col-2 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -651,7 +672,7 @@
                                 <span class="topspan"><span class="kills">{{g.match10_kills}}</span> / <span class="deaths">{{g.match10_deaths}}</span> / <span class="assists">{{g.match10_assists}}</span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D</span>
                             </div>
@@ -659,7 +680,7 @@
                                 <span class="topspan"><span class="kills" id="tenthkdspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end">
+                        <div class="col-1 p-2 text-end">
                             <div class="row">
                                 <span class="botspan">K / D / A</span>
                             </div>
@@ -667,7 +688,7 @@
                                 <span class="topspan"><span class="kills" id="tenthkdaspan"></span></span>
                             </div>
                         </div>
-                        <div class="col-1 text-end me-2">
+                        <div class="col-1 p-2 text-end me-2">
                             <div class="row">
                                 <span class="botspan">Score</span>
                             </div>
@@ -675,7 +696,7 @@
                                 <span class="topspan">{{g.match10_score}}</span>
                             </div>
                         </div>
-                        <div class="col-1 d-flex justify-content-center">
+                        <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
                                 <button class="btn btn-outline-danger matchbtn" id="match10btn" type="submit"><i class="fas fa-info"></i></button>
                             </div>
@@ -692,6 +713,7 @@
             window.addEventListener('load', (event) => {
                 mathall();
                 $("#rankprogress").css("width","{{g.ranking_in_tier}}%");
+                winsnlooses();
             });
         </script>
         <script>
@@ -897,6 +919,173 @@ function tenthmath2() {
     tenthmathstuff2 = tenthmathstuff2.toFixed(2);
     document.getElementById("tenthkdaspan").textContent=tenthmathstuff2;
 }
+        </script>
+        <script>
+            function winsnlooses() {
+                winloose1();
+                winloose2();
+                winloose3();
+                winloose4();
+                winloose5();
+                winloose6();
+                winloose7();
+                winloose8();
+                winloose9();
+                winloose10();
+                
+                
+            }
+        </script>
+        <script>
+            function winloose1() {
+                let status1 = "{{g.match1_has_won}}";
+                console.log(status1);
+                if(status1 == "True") {
+                    $("#statusmatch1").text("WIN");
+                    $("#statusmatch1").addClass("bg-success");
+                } else if(status1 == "False") {
+                    $("#statusmatch1").text("LOOSE");
+                    $("#statusmatch1").addClass("bg-danger");
+                } else {
+                    $("#statusmatch1").text("N/A");
+                    $("#statusmatch1").addClass("bg-secondary");
+                };
+            };
+
+            function winloose2() {
+                let status2 = "{{g.match2_has_won}}";
+                console.log(status2);
+                if(status2 == "True") {
+                    $("#statusmatch2").text("WIN");
+                    $("#statusmatch2").addClass("bg-success");
+                } else if(status2 == "False") {
+                    $("#statusmatch2").text("LOOSE");
+                    $("#statusmatch2").addClass("bg-danger");
+                } else {
+                    $("#statusmatch2").text("N/A");
+                    $("#statusmatch2").addClass("bg-secondary");
+                };
+            };
+
+            function winloose3() {
+                let status3 = "{{g.match3_has_won}}";
+                console.log(status3);
+                if(status3 == "True") {
+                    $("#statusmatch3").text("WIN");
+                    $("#statusmatch3").addClass("bg-success");
+                } else if(status3 == "False") {
+                    $("#statusmatch3").text("LOOSE");
+                    $("#statusmatch3").addClass("bg-danger");
+                } else {
+                    $("#statusmatch3").text("N/A");
+                    $("#statusmatch3").addClass("bg-secondary");
+                };
+            };
+
+            function winloose4() {
+                let status4 = "{{g.match4_has_won}}";
+                console.log(status4);
+                if(status4 == "True") {
+                    $("#statusmatch4").text("WIN");
+                    $("#statusmatch4").addClass("bg-success");
+                } else if(status4 == "False") {
+                    $("#statusmatch4").text("LOOSE");
+                    $("#statusmatch4").addClass("bg-danger");
+                } else {
+                    $("#statusmatch4").text("N/A");
+                    $("#statusmatch4").addClass("bg-secondary");
+                };
+            };
+
+            function winloose5() {
+                let status5 = "{{g.match5_has_won}}";
+                console.log(status5);
+                if(status5 == "True") {
+                    $("#statusmatch5").text("WIN");
+                    $("#statusmatch5").addClass("bg-success");
+                } else if(status5 == "False") {
+                    $("#statusmatch5").text("LOOSE");
+                    $("#statusmatch5").addClass("bg-danger");
+                } else {
+                    $("#statusmatch5").text("N/A");
+                    $("#statusmatch5").addClass("bg-secondary");
+                };
+            };
+
+            function winloose6() {
+                let status6 = "{{g.match6_has_won}}";
+                console.log(status6);
+                if(status6 == "True") {
+                    $("#statusmatch6").text("WIN");
+                    $("#statusmatch6").addClass("bg-success");
+                } else if(status6 == "False") {
+                    $("#statusmatch6").text("LOOSE");
+                    $("#statusmatch6").addClass("bg-danger");
+                } else {
+                    $("#statusmatch6").text("N/A");
+                    $("#statusmatch6").addClass("bg-secondary");
+                };
+            };
+
+            function winloose7() {
+                let status7 = "{{g.match7_has_won}}";
+                console.log(status7 == "False");
+                if(status7 == "True") {
+                    $("#statusmatch7").text("WIN");
+                    $("#statusmatch7").addClass("bg-success");
+                } else if(status7) {
+                    $("#statusmatch7").text("LOOSE");
+                    $("#statusmatch7").addClass("bg-danger");
+                } else {
+                    $("#statusmatch7").text("N/A");
+                    $("#statusmatch7").addClass("bg-secondary");
+                };
+            };
+
+            function winloose8() {
+                let status8 = "{{g.match8_has_won}}";
+                console.log(status8);
+                if(status8 == "True") {
+                    $("#statusmatch8").text("WIN");
+                    $("#statusmatch8").addClass("bg-success");
+                } else if(status8 == "False") {
+                    $("#statusmatch8").text("LOOSE");
+                    $("#statusmatch8").addClass("bg-danger");
+                } else {
+                    $("#statusmatch8").text("N/A");
+                    $("#statusmatch8").addClass("bg-secondary");
+                };
+            };
+
+            function winloose9() {
+                let status9 = "{{g.match9_has_won}}";
+                console.log(status9);
+                if(status9 == "True") {
+                    $("#statusmatch9").text("WIN");
+                    $("#statusmatch9").addClass("bg-success");
+                } else if (status9 == "False") {
+                    $("#statusmatch9").text("LOOSE");
+                    $("#statusmatch9").addClass("bg-danger");
+                } else {
+                    $("#statusmatch9").text("N/A");
+                    $("#statusmatch9").addClass("bg-secondary");
+                };
+            };
+
+            function winloose10() {
+                let status10 = "{{g.match10_has_won}}";
+                console.log(status10);
+                if(status10 == "True") {
+                    $("#statusmatch10").text("WIN");
+                    $("#statusmatch10").addClass("bg-success");
+                } else if(status10 == "False") {
+                    $("#statusmatch10").text("LOOSE");
+                    $("#statusmatch10").addClass("bg-danger");
+                } else {
+                    $("#statusmatch10").text("N/A");
+                    $("#statusmatch10").addClass("bg-secondary");
+                };
+            };
         </script>
     </body>
 </html>
