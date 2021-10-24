@@ -62,6 +62,9 @@ def profile():
         players = i_match["data"]["players"]["all_players"]
         for p in players:
             if p["name"] == g.name and p["tag"] == g.tag:
+                if i == 0:
+                    g.playertitle = valorant.get_playertitle(p["player_title"])["data"]["titleText"]
+                    print(g.playertitle)
                 exec(f'g.match{i + 1}_agent_icon = p["assets"]["agent"]["killfeed"]')
                 exec(f'g.match{i + 1}_agent_name = p["character"]')
                 exec(f'g.match{i + 1}_score = p["stats"]["score"]')

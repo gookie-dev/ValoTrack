@@ -45,3 +45,7 @@ def get_map_data(name):
     for map in maps["data"]:
         if map["displayName"] == name:
             return map
+
+
+def get_playertitle(puuid):
+    return requests.get('https://valorant-api.com/v1/playertitles/' + puuid).json()
