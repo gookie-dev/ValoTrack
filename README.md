@@ -9,7 +9,7 @@ A simple Valorant match tracker made by gookieAT & Vesturo
 
 ### Development TO-DOs
 
-- [ ] Playertitle (g.player_title)
+- [x] Playertitle (g.player_title)
 - [ ] Moar Stats
 - [x] Visual Design
 - [ ] Search over profile.html navbar
