@@ -22,20 +22,23 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  
+                    <form class="d-flex" style=" width: 100%; opacity: .4 !important; ">
+                        <input class="form-control me-2 bg-dark text-light" id="searchname" type="search" placeholder="name" aria-label="name" disabled>
+                        <input class="form-control me-2 bg-dark text-light" id="tag" type="search" placeholder="tag" aria-label="tag" disabled>
+                        <select class="form-select bg-dark text-light" id="region" name="region" aria-describedby="region" aria-label="region" disabled>
+                            <option selected>Select Region</option>
+                            <option value="eu">Europe</option>
+                            <option value="na">North-America</option>
+                            <option value="ap">Asia</option>
+                            <option value="kr">Korea</option>
+                        </select>
+                        <button class="btn btn-outline-danger" style="width: 160px;" type="submit" disabled>Search (soon)</button>
+                    </form> 
                 </ul>
-                <form class="d-flex" style=" width: 28%; ">
-                    <input class="form-control me-2 bg-dark text-light" id="searchname" type="search" placeholder="name" aria-label="name">
-                    <input class="form-control me-2 bg-dark text-light" id="tag" type="search" placeholder="tag" aria-label="tag">
-                    <select class="form-select bg-dark text-light" id="region" name="region" aria-describedby="region" aria-label="region">
-                        <option selected>Select Region</option>
-                        <option value="eu">Europe</option>
-                        <option value="na">North-America</option>
-                        <option value="ap">Asia</option>
-                        <option value="kr">Korea</option>
-                    </select>
-                    <button class="btn btn-outline-danger" type="submit">Search</button>
-                  </form>
+                <div class="d-flex">
+                    <button class="btn btn-outline-danger" onclick="window.location.href='https://github.com/gookieAT/ValoTrack'" type="submit"><i class="fab fa-github pe-2"></i></i>Github Repository</button>
+                </div>
+                
               </div>
             </div>
         </nav>
@@ -91,7 +94,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-9 bg-dark">
-                    <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match1_map_card}});">
+                    <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match1_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match1_agent_icon}}">
                         </div>
@@ -148,11 +151,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match1btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match1btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match2_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match2_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match2_agent_icon}}">
                         </div>
@@ -209,11 +212,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match2btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match2btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match3_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match3_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match3_agent_icon}}">
                         </div>
@@ -270,14 +273,13 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match3btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match3btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match4_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match4_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match4_agent_icon}}">
-                            <span class="badge" id="agentname">{{g.match4_agent_name}}</span>
                         </div>
                         <div class="col-12 p-2 col-sm-3 ms-5">
                             <div class="row">
@@ -332,11 +334,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match4btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match4btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match5_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match5_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match5_agent_icon}}">
                         </div>
@@ -393,11 +395,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match5btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match5btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match6_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match6_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match6_agent_icon}}">
                         </div>
@@ -454,11 +456,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match6btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match6btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match7_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match7_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match7_agent_icon}}">
                         </div>
@@ -515,11 +517,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match7btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match7btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match8_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match8_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match8_agent_icon}}">
                         </div>
@@ -576,11 +578,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match8btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match8btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match9_map_card}});">
+                     <div class="col-12 mb-2-5 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match9_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match9_agent_icon}}">
                         </div>
@@ -637,11 +639,11 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match9btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match9btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>
-                     <div class="col-12 p-2 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match10_map_card}});">
+                     <div class="col-12 match" style="background:linear-gradient(to right, transparent, #1e2225 25%),url({{g.match10_map_card}});">
                         <div class="col-12 col-sm-1">
                             <img id="agenticon" src="{{g.match10_agent_icon}}">
                         </div>
@@ -698,7 +700,7 @@
                         </div>
                         <div class="col-1 p-2 d-flex justify-content-center">
                             <div class="row">
-                                <button class="btn btn-outline-danger matchbtn" id="match10btn" type="submit"><i class="fas fa-info"></i></button>
+                                <button class="btn btn-outline-danger matchbtn" id="match10btn" type="submit" disabled><i class="fas fa-info pe-2"></i><span>SOON</span></button>
                             </div>
                         </div>
                     </div>

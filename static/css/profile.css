@@ -15,7 +15,13 @@
     border: 1px solid #ff4655;
 }
 
+.form-control{
+    border: 1px solid #ff4655 !important;
+}
 
+.form-select{
+    border: 1px solid #ff4655 !important;
+}
 
 .mb-2-5 {
     margin-bottom: .45rem !important;
@@ -26,8 +32,9 @@
   }
 
   .matchbtn {
-    width: 3.3rem !important;
-    height: 3.3rem !important;
+    width: 7.3rem !important;
+    height: 100% !important;
+    opacity: .4 !important;
   }
 
 .navbar-brand {

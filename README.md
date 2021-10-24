@@ -17,3 +17,5 @@ A simple Valorant match tracker made by gookieAT & Vesturo
 - [x] Last 10 Matches
 - [ ] Async api request
 - [ ] store data for further requests
+- [ ] Detailed Match Page (V2?)
+- [x] Frontend cleanup
